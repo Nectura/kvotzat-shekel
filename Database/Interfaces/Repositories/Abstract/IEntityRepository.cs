@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace KvotzatShekel.Database.Interfaces.Repositories;
+namespace KvotzatShekel.Database.Interfaces.Repositories.Abstract;
 
 public interface IEntityRepository<T> where T : class
 {

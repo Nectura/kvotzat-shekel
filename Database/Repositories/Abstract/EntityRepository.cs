@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using KvotzatShekel.Database.Interfaces.Repositories;
+using KvotzatShekel.Database.Interfaces.Repositories.Abstract;
 using Microsoft.EntityFrameworkCore;
 
 namespace KvotzatShekel.Database.Repositories.Abstract;
