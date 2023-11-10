@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace KvotzatShekel.Migrations
 {
     [DbContext(typeof(EntityContext))]
-    [Migration("20231110120753_Initial")]
+    [Migration("20231110132708_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -27,10 +27,7 @@ namespace KvotzatShekel.Migrations
             modelBuilder.Entity("KvotzatShekel.Database.Models.Customer", b =>
                 {
                     b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()

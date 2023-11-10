@@ -19,6 +19,10 @@ public sealed class EntityContext : DbContext, IEntityContext
     {
         base.OnModelCreating(builder);
         
+        builder.Entity<Customer>()
+            .Property(m => m.Id)
+            .ValueGeneratedNever();
+            
         builder.Entity<FactoryToCustomer>()
             .HasKey(m => new { m.CustomerId, m.FactoryId, m.GroupId });
     }
